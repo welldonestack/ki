@@ -683,13 +683,10 @@ article .card-body {
     color:#333;
 }
 a.prev {    
-    position: relative;
-    left: 1px;    
+  position: relative;
 }
 a.next {
   position: relative;
-    position: relative;
-    right: 1px; 
 }
 #resultsmodal {
      background: rgba(255,255,255,0.8);
