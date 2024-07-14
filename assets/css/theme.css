@@ -167,8 +167,8 @@ h1.display-1 {
 body {
   font-family: 'IBM Plex Mono', monospace;
   font-variant-numeric: slashed-zero; /* Enable alternative zero glyph */
-  font-size: 11pt;
-  word-spacing: -0.1em;
+  font-size: 10pt;
+  word-spacing: -0.15em;
 }
 
 /*body {
