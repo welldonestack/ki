@@ -4,7 +4,7 @@ description: "Designing coversation."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: "/ki"
-email: 'kione.yoon@gmail.com'
+email: "xblrlykp"
 
 include: ["_pages"]
 permalink: /:title/
