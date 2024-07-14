@@ -1,3 +1,8 @@
+.col-md-6{
+padding-top:15px;
+padding-bottom: 15px;
+}
+
 .card{
   background-color: transparent !important;
 }
@@ -680,12 +685,12 @@ article .card-body {
 }
 a.prev {    
     position: relative;
-    left: 2px;    
+    left: 1px;    
 }
 a.next {
   position: relative;
     position: relative;
-    right: 2px; 
+    right: 1px; 
 }
 #resultsmodal {
      background: rgba(255,255,255,0.8);
