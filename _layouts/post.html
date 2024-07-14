@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+
+<section class="bg-white pt-10 pb-5" style="padding-left: 3px; padding-right: 3px;">  
+    <div class="container">
+        
+      <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-8">
+          <div class="d-flex justify-content-center align-items-center rounded-circle" style="width: 30px; height: 30px; background-color: black">
+            <span class="text-white">{% include post-counter.html %}</span>
+          </div>
+        </div>
+      </div>
+
+        <div class="row justify-content-center">
+            
+
+                  <!-- Column for captions or additional text -->
+                  <div class="col-md-3">
+                    <div class="mb-3">
+                      {% for category in page.categories %}
+                      <a class="btn btn-sm btn-trans mt-3" href="{{ site.baseurl }}/categories.html#{{ category | downcase }}">
+                        <span class="special-char">#</span>{{ category }}
+                        </a>
+                      {% endfor %}
+                    </div>
+                    <!-- Add your captions or text here -->
+                    <div class="caption-text">
+                        <p>{{ page.caption }}</p>
+                    </div>
+                </div>
+                
+            
+            <!-- Main content column -->
+            <div class="col-md-8">
+              <h1 class="display-1 font-weight-normal">
+                {{ page.title }} 
+              </h1>
+                
+                <article class="card">
+                    
+                    {% if page.image %} 
+                        <!-- Remove or comment out the pinme span and its contents -->
+                        <!--
+                        <span class="pinme">
+                            <a data-pin-do="buttonPin" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&media={{ site.url }}{{ site.baseurl }}/{{ page.image }}&description={{ page.title }}- {{ page.content | strip_html | truncatewords:25 }}"></a>
+                        </span>
+                        -->
+                        <img class="card-img" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}"> 
+                    {% endif %}
+                    
+                    <div class="card-body"> <!-- Ensure contents are left-aligned -->
+                        
+                        {{ content }}
+                        <!--
+                        {% if page.visit %}
+                        <p><a target="_blank" href="{{ page.visit }}" class="btn btn-gray d-block font-weight-bold">
+                        Visit <i class="fas fa-external-link-alt"></i></a>
+                        </p>
+                        {% endif %}
+                        -->
+                        
+                    </div>  
+                    
+                </article>
+                
+                <div class="PageNavigation">
+                  {% if page.next.url %}
+                    <a class="prev" href="{{ site.baseurl }}{{ page.next.url }}">←</a>
+                  {% else %}
+                    <span class="prev placeholder"> </span> <!-- Placeholder for layout consistency -->
+                  {% endif %}
+                  
+                  {% if page.previous.url %}
+                    <a class="next" href="{{ site.baseurl }}{{ page.previous.url }}">→</a>
+                  {% else %}
+                    <span class="next placeholder"> </span> <!-- Placeholder for layout consistency -->
+                  {% endif %}
+                </div>
+                                      
+                
+            </div>
+        </div>
+    </div>
+</section>
