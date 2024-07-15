@@ -1,5 +1,5 @@
 let tickerTexts = ["PACKAGING", "MOTION", "BRANDING", "TYPOGRAPHY", "PUBLICATION"];
-let textURLs = tickerTexts.map(text => `http://localhost:4000/works.html#${text.toLowerCase()}`);
+let textURLs = tickerTexts.map(text => `https://welldonestack.github.io/ki/works.html#${text.toLowerCase()}`);
 let textSpeed = 6; // Speed of the ticker
 let textPositions = []; // Array to hold position vectors of the ticker texts
 let textWidths = []; // Array to hold widths of the ticker texts
@@ -86,7 +86,7 @@ function drawTickerTexts() {
   textSize(fontSize); // Set the font size
   isMouseOver = false; // Reset mouse over flag
   for (let i = 0; i < tickerTexts.length; i++) {
-    if (isMouseOverText(textPositions[i], textWidths[i])) {
+    if (isMouseOverText(textPositions[i], textWidths[i]) || isTouchOverText(textPositions[i], textWidths[i])) {
       fill(0); // Black color on hover
       isMouseOver = true; // Set mouse over flag
     } else {
@@ -101,6 +101,17 @@ function drawTickerTexts() {
 
 function isMouseOverText(position, textWidth) {
   return mouseX > position.x && mouseX < position.x + textWidth && mouseY > position.y - fontSize && mouseY < position.y;
+}
+function isTouchOverText(position, textWidth) {
+  for (let touch of touches) {
+    let touchX = touch.winX; // Use touch.winX for browser-relative coordinates
+    let touchY = touch.winY; // Use touch.winY for browser-relative coordinates
+
+    if (touchX > position.x && touchX < position.x + textWidth && touchY > position.y - fontSize && touchY < position.y) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function mousePressed() {

@@ -7,13 +7,26 @@ let spacing = 50; // Spacing between ticker texts
 let tickerAreaWidth = 800; // Width of the ticker area
 let tickerAreaHeight = 350; // Height of the ticker area
 let tickerAreaPos; // Position vector of the ticker area
-let fontSize = 50; // Font size of the ticker text
+let fontSize = 500; // Font size of the ticker text
 let isMouseOver = false; // Flag to indicate if mouse is over a ticker text
 let draggingIndex = -1; // Index of the text being dragged
 let dragOffset = 0; // Offset between mouse position and text position during drag
 
+function windowResize(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  // Calculate the height of the first row
+  firstRowHeight = document.querySelector('.row:first-of-type').offsetHeight + 130;
+  rowElement = document.querySelector('.row');
+  rowLeft = rowElement.offsetLeft;
+  rowWidth = rowElement.offsetWidth;
+  
+  // Create canvas with limited height to match the first row
+  let canvas = createCanvas(rowWidth, firstRowHeight);
+  canvas.position(rowLeft, 50);
+  canvas.style('z-index','-1');
   
   // Set the font and size
   textFont('Bebas Neue');
@@ -23,7 +36,7 @@ function setup() {
   calculateTextWidths();
 
   // Initialize the ticker area position
-  tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, (windowHeight - tickerAreaHeight) / 2);
+  tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, fontSize*1.3-firstRowHeight);
 
   // Initialize the positions of the ticker texts
   let initialX = tickerAreaPos.x + tickerAreaWidth;
@@ -73,7 +86,7 @@ function drawTickerTexts() {
   textSize(fontSize); // Set the font size
   isMouseOver = false; // Reset mouse over flag
   for (let i = 0; i < tickerTexts.length; i++) {
-    if (isMouseOverText(textPositions[i], textWidths[i])) {
+    if (isMouseOverText(textPositions[i], textWidths[i]) || isTouchOverText(textPositions[i], textWidths[i])) {
       fill(0); // Black color on hover
       isMouseOver = true; // Set mouse over flag
     } else {
@@ -89,6 +102,17 @@ function drawTickerTexts() {
 function isMouseOverText(position, textWidth) {
   return mouseX > position.x && mouseX < position.x + textWidth && mouseY > position.y - fontSize && mouseY < position.y;
 }
+function isTouchOverText(position, textWidth) {
+  for (let touch of touches) {
+    let touchX = touch.winX; // Use touch.winX for browser-relative coordinates
+    let touchY = touch.winY; // Use touch.winY for browser-relative coordinates
+
+    if (touchX > position.x && touchX < position.x + textWidth && touchY > position.y - fontSize && touchY < position.y) {
+      return true;
+    }
+  }
+  return false;
+}
 
 function mousePressed() {
   for (let i = 0; i < tickerTexts.length; i++) {
@@ -102,8 +126,4 @@ function mousePressed() {
       return;
     }
   }
-}
-
-function touchStarted() {
-  return touchX > position.x && touchX < position.x + textWidth && touchY > position.y - fontSize && mouseY < position.y;
 }
