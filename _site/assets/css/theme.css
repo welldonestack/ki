@@ -561,6 +561,7 @@ footer.footer {
   /* Add a 1px solid border with LightGray color */
   text-decoration: none !Important;
   /* Remove underline */
+  font-style:italic;
 }
 
 .btn-trans:hover {
