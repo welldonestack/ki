@@ -87,6 +87,7 @@ function drawTickerTexts() {
   isMouseOver = false; // Reset mouse over flag
   for (let i = 0; i < tickerTexts.length; i++) {
     if (isMouseOverText(textPositions[i], textWidths[i]) || isTouchOverText(textPositions[i], textWidths[i])) {
+      noStroke();
       fill(0); // Black color on hover
       isMouseOver = true; // Set mouse over flag
     } else {
