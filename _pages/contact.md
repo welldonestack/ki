@@ -30,6 +30,6 @@ Please send your message to {{site.name}}.
     <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address" required>
     </div>
     </div>
-    <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message" required></textarea>    
+    <textarea rows="6" class="form-control mb-3" name="message" placeholder="Message" required></textarea>    
     <input class="btn btn-trans" type="submit" value="send">
 </form>

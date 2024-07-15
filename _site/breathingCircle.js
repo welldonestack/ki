@@ -10,6 +10,10 @@ let t2 = 0;
 let noiseX = 0;
 let noiseY = 0;
 
+function windowResize(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
   // Get the height of the first row
   firstRowHeight = document.querySelector('.row:first-of-type').offsetHeight + 130;
