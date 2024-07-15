@@ -7,26 +7,13 @@ let spacing = 50; // Spacing between ticker texts
 let tickerAreaWidth = 800; // Width of the ticker area
 let tickerAreaHeight = 350; // Height of the ticker area
 let tickerAreaPos; // Position vector of the ticker area
-let fontSize = 500; // Font size of the ticker text
+let fontSize = 50; // Font size of the ticker text
 let isMouseOver = false; // Flag to indicate if mouse is over a ticker text
 let draggingIndex = -1; // Index of the text being dragged
 let dragOffset = 0; // Offset between mouse position and text position during drag
 
-function windowResize(){
-  resizeCanvas(windowWidth, windowHeight);
-}
-
 function setup() {
-  // Calculate the height of the first row
-  firstRowHeight = document.querySelector('.row:first-of-type').offsetHeight + 130;
-  rowElement = document.querySelector('.row');
-  rowLeft = rowElement.offsetLeft;
-  rowWidth = rowElement.offsetWidth;
-  
-  // Create canvas with limited height to match the first row
-  let canvas = createCanvas(rowWidth, firstRowHeight);
-  canvas.position(rowLeft, 50);
-  canvas.style('z-index','-1');
+  createCanvas(windowWidth, windowHeight);
   
   // Set the font and size
   textFont('Bebas Neue');
@@ -36,7 +23,7 @@ function setup() {
   calculateTextWidths();
 
   // Initialize the ticker area position
-  tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, fontSize*1.3-firstRowHeight);
+  tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, (windowHeight - tickerAreaHeight) / 2);
 
   // Initialize the positions of the ticker texts
   let initialX = tickerAreaPos.x + tickerAreaWidth;
@@ -111,6 +98,20 @@ function mousePressed() {
     let textH = fontSize; // Approximating the height of the text
 
     if (mouseX > textX && mouseX < textX + textW && mouseY > textY - textH && mouseY < textY) {
+      window.location.href = textURLs[i];
+      return;
+    }
+  }
+}
+
+function touchStarted() {
+  for (let i = 0; i < tickerTexts.length; i++) {
+    let textX = textPositions[i].x;
+    let textY = textPositions[i].y;
+    let textW = textWidths[i];
+    let textH = fontSize; // Approximating the height of the text
+
+    if (touchX > textX && touchX < textX + textW && touchY > textY - textH && touchY < textY) {
       window.location.href = textURLs[i];
       return;
     }
