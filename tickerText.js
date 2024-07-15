@@ -1,5 +1,5 @@
 let tickerTexts = ["PACKAGING", "MOTION", "BRANDING", "TYPOGRAPHY", "PUBLICATION"];
-let textURLs = tickerTexts.map(text => `http://localhost:4000/works.html#${text.toLowerCase()}`);
+let textURLs = tickerTexts.map(text => `https://welldonestack.github.io/ki/works.html#${text.toLowerCase()}`);
 let textSpeed = 6; // Speed of the ticker
 let textPositions = []; // Array to hold position vectors of the ticker texts
 let textWidths = []; // Array to hold widths of the ticker texts
