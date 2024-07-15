@@ -22,8 +22,7 @@ layout: default
                     <img class="card-img-top mb-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
                 {% endif %}
                 
-                <article class="card">
-                    <div class="card-body" style="max-width: 370px;">
+                <article class="card" style="max-width: 370px;">
                         {{ content }}
                     </div>
                 </article>
