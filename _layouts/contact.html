@@ -57,7 +57,7 @@ layout: default
             </div>
 
             <!-- Right Column -->
-            <div class="col-md-4">
+            <div class="col-md-4" style="background-color: transparent;">
                 {% if page.image2 %}
                     <img class="card-img-top mb-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
                 {% endif %}
