@@ -348,7 +348,7 @@ footer.footer {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 0;
   transition: ease .1s;
 }
