@@ -105,15 +105,5 @@ function mousePressed() {
 }
 
 function touchStarted() {
-  for (let i = 0; i < tickerTexts.length; i++) {
-    let textX = textPositions[i].x;
-    let textY = textPositions[i].y;
-    let textW = textWidths[i];
-    let textH = fontSize; // Approximating the height of the text
-
-    if (touchX > textX && touchX < textX + textW && touchY > textY - textH && touchY < textY) {
-      window.location.href = textURLs[i];
-      return;
-    }
-  }
+  return touchX > position.x && touchX < position.x + textWidth && touchY > position.y - fontSize && mouseY < position.y;
 }
