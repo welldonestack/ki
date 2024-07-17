@@ -9,7 +9,7 @@ layout: default
                 {% if page.image1 %}
                     <div class="image-with-caption">
                         <a href="{{ page.visit }}" target="_blank">
-                            <img id="image1" class="card-img-top mb-2 normal-image" src="{{ page.image1 | absolute_url }}" alt="{{ page.title }}">
+                            <img id="image1" class="card-img-top mb-2 normal-image" src="{{ page.image1 | absolute_url }}" alt="{{ post.title }}" loading="lazy">
                         </a>
                         <p class="caption">{{ page.image1_caption }}</p>
                     </div>
