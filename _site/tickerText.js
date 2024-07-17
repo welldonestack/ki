@@ -39,7 +39,7 @@ function setup() {
   tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, fontSize*1.3-firstRowHeight);
 
   // Initialize the positions of the ticker texts
-  let initialX = tickerAreaPos.x + tickerAreaWidth;
+  let initialX = tickerAreaPos.x + tickerAreaWidth + 300;
   for (let i = 0; i < tickerTexts.length; i++) {
     let posY = tickerAreaPos.y + (tickerAreaHeight / 2); // Adjust vertically
     textPositions[i] = createVector(initialX, posY);
@@ -86,7 +86,8 @@ function drawTickerTexts() {
   textSize(fontSize); // Set the font size
   isMouseOver = false; // Reset mouse over flag
   for (let i = 0; i < tickerTexts.length; i++) {
-    if (isMouseOverText(textPositions[i], textWidths[i]) || isTouchOverText(textPositions[i], textWidths[i])) {
+    if (isMouseOverText(textPositions[i], textWidths[i])) {
+      noStroke();
       fill(0); // Black color on hover
       isMouseOver = true; // Set mouse over flag
     } else {
@@ -102,17 +103,7 @@ function drawTickerTexts() {
 function isMouseOverText(position, textWidth) {
   return mouseX > position.x && mouseX < position.x + textWidth && mouseY > position.y - fontSize && mouseY < position.y;
 }
-function isTouchOverText(position, textWidth) {
-  for (let touch of touches) {
-    let touchX = touch.winX; // Use touch.winX for browser-relative coordinates
-    let touchY = touch.winY; // Use touch.winY for browser-relative coordinates
 
-    if (touchX > position.x && touchX < position.x + textWidth && touchY > position.y - fontSize && touchY < position.y) {
-      return true;
-    }
-  }
-  return false;
-}
 
 function mousePressed() {
   for (let i = 0; i < tickerTexts.length; i++) {

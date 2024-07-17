@@ -39,7 +39,7 @@ function setup() {
   tickerAreaPos = createVector((windowWidth - tickerAreaWidth) / 2, fontSize*1.3-firstRowHeight);
 
   // Initialize the positions of the ticker texts
-  let initialX = tickerAreaPos.x + tickerAreaWidth;
+  let initialX = tickerAreaPos.x + tickerAreaWidth + 300;
   for (let i = 0; i < tickerTexts.length; i++) {
     let posY = tickerAreaPos.y + (tickerAreaHeight / 2); // Adjust vertically
     textPositions[i] = createVector(initialX, posY);

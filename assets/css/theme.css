@@ -712,7 +712,7 @@ a.next {
   position: relative;
 }
 
-/* for smoothe image loading */
+/* Add this to your theme.css */
 
 @keyframes dissolve {
   0% {
@@ -724,7 +724,6 @@ a.next {
 }
 
 .dissolve {
-  animation: dissolve 1s ease-in-out;
+  animation: dissolve 2s ease-in;
 }
-
 

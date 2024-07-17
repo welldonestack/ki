@@ -712,3 +712,18 @@ a.next {
   position: relative;
 }
 
+/* Add this to your theme.css */
+
+@keyframes dissolve {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dissolve {
+  animation: dissolve 2s ease-in;
+}
+
