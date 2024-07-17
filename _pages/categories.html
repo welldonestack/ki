@@ -39,3 +39,18 @@ permalink: "/works.html"
 </div>
     
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll(".card img");
+      
+      images.forEach(img => {
+        img.onload = function() {
+          img.classList.add("dissolve");
+        };
+        if (img.complete) {
+          img.classList.add("dissolve");
+        }
+      });
+    });
+  </script>
