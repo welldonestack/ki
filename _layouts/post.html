@@ -30,6 +30,9 @@ layout: default
                     <!-- Add your captions or text here -->
                     <div class="caption-text">
                         <p>{{ page.caption }}</p>
+                        {% if page.caption_image %}
+                        <img src="{{ page.caption_image | absolute_url }}" alt="Caption Image">
+                        {% endif %}
                     </div>
                 </div>
                 
