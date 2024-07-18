@@ -2,27 +2,25 @@
 layout: default
 ---
 
-
 <section class="bg-white pt-10 pb-5" style="padding-left: 3px; padding-right: 3px;">
   <div class="container">
-
     <div class="row justify-content-center">
       <div class="col-md-3">
       </div>
       <div class="col-md-8">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="d-flex justify-content-center align-items-center rounded-circle"
-          style="width: 23px; height: 23px; background-color: black; font-size: 9px;">
-          <span class="text-white">{% include post-counter.html %}</span>
-        </div>
-          <div>
-              {% for category in page.categories %}
-              <a class="btn btn-sm btn-trans" style="font-style: normal" href="{{ site.baseurl }}/works.html#{{ category | downcase }}">
-                  <span class="special-char">#</span>{{ category }}
-              </a>
-              {% endfor %}
+            style="width: 23px; height: 23px; background-color: black; font-size: 9px;">
+            <span class="text-white">{% include post-counter.html %}</span>
           </div>
-       </div>
+          <div>
+            {% for category in page.categories %}
+            <a class="btn btn-sm btn-trans" style="font-style: normal" href="{{ site.baseurl }}/works.html#{{ category | downcase }}">
+              <span class="special-char">#</span>{{ category }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
         <div class="col-md-8"></div>
         <hr>
         <h1 class="display-1 font-weight-normal">
@@ -30,43 +28,38 @@ layout: default
         </h1>
         <hr>
         {% if page.image %}
-        <img class="card-img" src="{% if page.image contains " ://" %}{{ page.image }}{% else %}{{ page.image |
-          absolute_url }}{% endif %}" alt="{{ post.title }}" loading="lazy">
+        <img class="card-img" src="{% if page.image contains "://"%}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ post.title }}" loading="lazy">
         {% endif %}
       </div>
     </div>
     
     <div class="row justify-content-center">
-
       <!-- Column for captions or additional text -->
-      
       <div class="col-md-3">
         <br><hr>
-        <!-- Add your captions or text here -->
         <div class="row">
-            <!-- First caption and image -->
-            <div class="col-md-12 col-sm-6">
-                <div class="caption-text">
-                    <p>{{ page.caption }}</p>
-                </div>
+          <!-- First caption and image -->
+          <div class="col-md-12 col-sm-6">
+            <div class="caption-text">
+              <p>{{ page.caption }}</p>
             </div>
-            <!-- Second caption and image -->
-            <div class="col-lg-12 col-sm-6 mb-3">
-                <div class="caption-text">
-                    {% if page.caption_image %}
-                    <img src="{{ page.caption_image | absolute_url }}" alt="Caption Image" class="img-fluid">
-                    {% endif %}
-                </div>
+          </div>
+          <!-- Second caption and image -->
+          <div class="col-lg-12 col-sm-6 mb-3">
+            <div class="caption-text">
+              {% if page.caption_image %}
+              <img src="{{ page.caption_image | absolute_url }}" alt="Caption Image" class="img-fluid" loading="lazy">
+              {% endif %}
             </div>
+          </div>
         </div>
-    </div>
-
-        
+      </div>
+      
       <!-- Main content column -->
       <div class="col-md-8">
         <br><hr>
         <article class="card">
-          <div class="card-body"> <!-- Ensure contents are left-aligned -->
+          <div class="card-body">
             {{ content }}
           </div>
         </article>
@@ -75,18 +68,31 @@ layout: default
           {% if page.next.url %}
           <a class="prev" href="{{ site.baseurl }}{{ page.next.url }}">←</a>
           {% else %}
-          <span class="prev placeholder"> </span> <!-- Placeholder for layout consistency -->
+          <span class="prev placeholder"> </span>
           {% endif %}
-
           {% if page.previous.url %}
           <a class="next" href="{{ site.baseurl }}{{ page.previous.url }}">→</a>
           {% else %}
-          <span class="next placeholder"> </span> <!-- Placeholder for layout consistency -->
+          <span class="next placeholder"> </span>
           {% endif %}
         </div>
       </div>
-
-
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll("img");
+
+    images.forEach(img => {
+      img.setAttribute("loading", "lazy");
+      img.onload = function() {
+        img.classList.add("dissolve");
+      };
+      if (img.complete) {
+        img.classList.add("dissolve");
+      }
+    });
+  });
+</script>
