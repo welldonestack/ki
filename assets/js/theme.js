@@ -1,6 +1,6 @@
 
 :root {
-  --ki - color: rgb(63, 0, 255);
+  --ki-color: rgb(63, 0, 255);
   /* Define the custom color variable */
 }
 
@@ -241,16 +241,15 @@ body {
 }
 
 article h1,
-article,
-  article h4,
-    article h5,
-      article h6 {
-  margin - bottom: 2rem;
+article h4,
+article h5,
+article h6 {
+  margin-bottom: 2rem; /* Fixed spacing around the hyphen */
 }
 
 article h3,
-  h2 {
-  margin - top: 3rem;
+h2 {
+  margin-top: 3rem; /* Fixed spacing around the hyphen */
 }
 
 article.card - body {
@@ -299,18 +298,19 @@ h3 {
   margin - bottom: 0;
 }
 
-h4 {
-  font - family: "IBM Plex Sans", sans - serif;
-  font - weight: 600;
-  font - style: normal;
-  font - size: 1.2rem;
-}
-
 h5 {
   font - family: 'IBM Plex Mono', monospace;
   font - weight: 400;
   font - style: italic;
   font - size: 1.5rem;
+}
+
+h4 {
+  color: #D3D3D3;
+  font - family: "IBM Plex Sans", sans - serif;
+  font - weight: 600;
+  font - style: normal;
+  font - size: 1.2rem;
 }
 
 .mt - neg100 {

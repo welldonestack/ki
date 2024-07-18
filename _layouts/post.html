@@ -47,8 +47,10 @@ layout: default
           <!-- Second caption and image -->
           <div class="col-lg-12 col-sm-6 mb-3">
             <div class="caption-text">
-              {% if page.caption_image %}
-              <img src="{{ page.caption_image | absolute_url }}" alt="Caption Image" class="img-fluid" loading="lazy">
+              {% if page.caption_images %}
+              {% for image in page.caption_images %}
+              <img src="{{ image.path | absolute_url }}" alt="Caption Image" class="img-fluid mb-3" loading="lazy">
+              {% endfor %}
               {% endif %}
             </div>
           </div>
