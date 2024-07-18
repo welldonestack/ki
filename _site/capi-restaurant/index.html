@@ -84,12 +84,10 @@
         <section class="bg-white pt-10 pb-5" style="padding-left: 3px; padding-right: 3px;">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-3">
-      </div>
+      <div class="col-md-3"></div>
       <div class="col-md-8">
         <div class="d-flex justify-content-between align-items-center mb-3">
-          <div class="d-flex justify-content-center align-items-center rounded-circle"
-            style="width: 23px; height: 23px; background-color: black; font-size: 9px;">
+          <div class="d-flex justify-content-center align-items-center rounded-circle" style="width: 23px; height: 23px; background-color: black; font-size: 9px;">
             <span class="text-white">
 
 
@@ -110,9 +108,7 @@
         </div>
         <div class="col-md-8"></div>
         <hr>
-        <h1 class="display-1 font-weight-normal">
-          Capi Restaurant
-        </h1>
+        <h1 class="display-1 font-weight-normal">Capi Restaurant</h1>
         <hr>
         
         <img class="card-img" src="http://localhost:4000/assets/images/sample/img8.jpg" alt="" loading="lazy">
@@ -122,7 +118,7 @@
     
     <div class="row justify-content-center">
       <!-- Column for captions or additional text -->
-      <div class="col-md-3">
+      <div class="col-md-3" style="padding-right: 15px !important;">
         <br><hr>
         <div class="row">
           <!-- First caption and image -->
@@ -131,7 +127,7 @@
               <p></p>
             </div>
           </div>
-          <!-- Second caption and image -->
+          <!-- Second caption and images slider -->
           <div class="col-lg-12 col-sm-6 mb-3">
             <div class="caption-text">
               
@@ -165,10 +161,21 @@
   </div>
 </section>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/themes/default/default.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ideal-image-slider/1.5.1/ideal-image-slider.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll("img");
+    const slider = new IdealImageSlider.Slider({
+      selector: '#slider3',
+      effect: 'slide',
+      interval: 3000,
+      transitionDuration: 700
+    });
+    slider.start();
 
+    const images = document.querySelectorAll("img");
     images.forEach(img => {
       img.setAttribute("loading", "lazy");
       img.onload = function() {
@@ -179,7 +186,8 @@
       }
     });
   });
-</script>        
+</script>
+        
     </main>
     
     <footer class="footer">     

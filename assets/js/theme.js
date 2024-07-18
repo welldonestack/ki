@@ -19,8 +19,6 @@ hr {
   position: relative;
   width: 100 %;
   min - height: 1px;
-  padding - right: 30px;
-  padding - left: 15px;
 }
 
 .footer {
@@ -49,6 +47,7 @@ hr {
   font - weight: 500;
   font - style: normal;
 }
+
 
 .image -with-caption {
   display: block;

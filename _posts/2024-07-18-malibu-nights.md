@@ -4,7 +4,7 @@ metadate: "hide"
 categories: Motion
 image: "/assets/images/posts/malibu-nights/malibu-nights-1.gif"
 caption: 
-  Designing the best-of-best album and tour collateral for the band MAROON5 was challenging in terms of making the typography stand out while capturing the essence of the band's identity and the album itself. The whole package share the core story but transforms according to the medium. The arrangement of the type was inspired by Alan Fletcher’s 1983 "PARTY" poster.
+  The band LANY’s image is playful yet also carries a hint of sarcasm, a duality that is reflected in their music. Bright sounds mingle with melancholic undertones, reminiscent of a late summer afternoon sunset. With these characteristics in mind, I intend to seek out objects that create an intriguing juxtaposition, enhancing the band’s unique aesthetic.
 caption_images: 
   - path: "/assets/images/posts/malibu-nights/malibu-nights-2.png"
   - path: "/assets/images/posts/malibu-nights/malibu-nights-3.png"
@@ -14,4 +14,4 @@ images:
 ---
 
 ![Image 0]({{ page.images[0].path | absolute_url }})
-#### Maroon 5 creates music for everyone—easy listening and catchy songs. In this regard, the album concept should be straightforward and memorable. “Baked” is a word with many layers of meaning, but most of all, it evokes a sense of smell, warm passion, and goodness. Embracing the cookie concept, the soft, round, yet chunky font "Podium Soft Regular" was chosen, along with a colorful yet neutral palette.
+#### After testing various compositions, this one stood out for its intriguing tension, evoking a sense of anticipation. The contrast is heightened by graffiti-inspired typography, blending brightness and playfulness with vivid colors, yet subtly hinting at regrets from a night in Malibu.
