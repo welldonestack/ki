@@ -3,7 +3,7 @@ layout: about
 title: "About"
 permalink: "/about.html"
 #image: /path/to/image.jpg
-image1: "/assets/images/Page/About/memoji_3face_motion_05.gif"
+image1: "/assets/images/Page/About/memoji_motion_05.gif"
 image1_caption: "<em><strong>Ki-One Yoon</strong></em> <br> graphic designer"
 #image2: /path/to/image2.jpg
 #image2_caption: "Image 2 caption"
