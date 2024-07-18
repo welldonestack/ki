@@ -2,7 +2,7 @@
 title:  "Pintereso Jekyll Theme"
 metadate: "hide"
 categories: [ Packaging ]
-image: "/assets/images/sample/img21.jpg"
+image: "/assets/images/posts/baked/baked-01.png"
 images:
   - path: "/assets/images/sample/img21.jpg"
     caption: "Caption for Image 21"
