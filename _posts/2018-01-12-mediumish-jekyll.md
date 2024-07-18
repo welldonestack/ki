@@ -1,7 +1,7 @@
 ---
 title:  "Mediumsih Jekyll Theme"
 metadate: "hide"
-categories: [ Branding ]
+categories: [ Identity ]
 image: "/assets/images/sample/img18.jpg"
 visit: "https://www.wowthemes.net/mediumish-free-jekyll-template/"
 ---

@@ -1,7 +1,7 @@
 ---
 title:  "Mediumish WP Theme"
 metadate: "hide"
-categories: [ Branding ]
+categories: [ Identity ]
 image: "/assets/images/sample/img19.jpg"
 visit: https://www.wowthemes.net/themes/mediumish-wordpress/
 ---
