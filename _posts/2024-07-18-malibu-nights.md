@@ -11,6 +11,11 @@ caption_images:
   - path: "/assets/images/posts/malibu-nights/malibu-nights-04.png"
 images:
   - path: "/assets/images/posts/malibu-nights/malibu-nights-05.png"
+table_data:
+  - title: "Tools Used"
+    value: "Traditional(Sketch), Adobe Photoshop(Coloring), p5.js(Motion)"
+  - title: "Fonts Used"
+    value: "Sandoll GothicNeo1, Handrawn Typography"
 ---
 
 ![Image 0]({{ page.images[0].path | absolute_url }})
