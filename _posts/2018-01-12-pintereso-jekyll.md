@@ -8,7 +8,7 @@ images:
     caption: "Caption for Image 21"
   - path: "/assets/images/posts/baked/baked-03.png"
     caption: "Caption for Image 2"
-  - path: "/assets/images/posts/baked/baked-01.png"
+  - path: "/assets/images/posts/baked/baked-03.png"
     caption: "Caption for Image 3"
 visit: "https://www.wowthemes.net/free-wordpress-theme-nectaria/"
 ---
