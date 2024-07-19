@@ -4,7 +4,7 @@ metadate: "hide"
 categories: [ Packaging ]
 image: "/assets/images/posts/baked/baked-01.png"
 images:
-  - path: "/assets/images/posts/baked/baked-01.png"
+  - path: "/assets/images/posts/baked/baked-02.png"
     caption: "Caption for Image 21"
   - path: "/assets/images/posts/baked/baked-01.png"
     caption: "Caption for Image 2"
