@@ -4,11 +4,11 @@ metadate: "hide"
 categories: [ Packaging ]
 image: "/assets/images/posts/baked/baked-01.png"
 images:
-  - path: "/assets/images/sample/img21.jpg"
+  - path: "/assets/images/posts/baked/baked-01.png"
     caption: "Caption for Image 21"
-  - path: "/assets/images/sample/img2.jpg"
+  - path: "/assets/images/posts/baked/baked-01.png"
     caption: "Caption for Image 2"
-  - path: "/assets/images/sample/img3.jpg"
+  - path: "/assets/images/posts/baked/baked-01.png"
     caption: "Caption for Image 3"
 visit: "https://www.wowthemes.net/free-wordpress-theme-nectaria/"
 ---
