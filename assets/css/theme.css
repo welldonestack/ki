@@ -1,16 +1,4 @@
-/* Styles for mobile */
-@media (max-width: 768px) {
-  .navbar {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 :root {
   --ki-color: rgb(63, 0, 255);
   /* Define the custom color variable */
