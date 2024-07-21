@@ -39,11 +39,11 @@ table_data:
 
 <br>
 ![Image 3]({{ page.images[3].path | absolute_url }})
-↳ For the menu, various logo variations were explored, with the oval logo emerging as the most effective for conveying an authentic gelateria look. Additionally, different secondary graphics were used to complement the design.
+↳ For the menu, several logo variations were tested, with the oval logo proving most effective in conveying an authentic gelateria look. Complementary secondary graphics were also used.
 
 <br>
 ![Image 4]({{ page.images[4].path | absolute_url }})
-↳ How it looks in the current venue.
+↳ This is the in-situ look.
 
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
