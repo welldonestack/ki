@@ -40,6 +40,4 @@ table_data:
 ![Image 5]({{ page.images[5].path | absolute_url }})
 <br>
 ![Image 6]({{ page.images[6].path | absolute_url }})
-<br>
-![Image 7]({{ page.images[7].path | absolute_url }})
 
