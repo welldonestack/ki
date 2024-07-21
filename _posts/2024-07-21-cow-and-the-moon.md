@@ -17,6 +17,7 @@ images:
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-10.png"
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-11.png"
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-12.png"
+  - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-13.png"
 
 table_data:
   - title: "Tools Used"
