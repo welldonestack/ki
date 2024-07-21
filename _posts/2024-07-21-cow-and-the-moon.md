@@ -31,15 +31,15 @@ table_data:
 <br>
 ![Image 1]({{ page.images[1].path | absolute_url }})
 <br>
-![Image 2]({{ page.images[1].path | absolute_url }})
+![Image 2]({{ page.images[2].path | absolute_url }})
 <br>
-![Image 3]({{ page.images[1].path | absolute_url }})
+![Image 3]({{ page.images[3].path | absolute_url }})
 <br>
-![Image 4]({{ page.images[1].path | absolute_url }})
+![Image 4]({{ page.images[4].path | absolute_url }})
 <br>
-![Image 5]({{ page.images[1].path | absolute_url }})
+![Image 5]({{ page.images[5].path | absolute_url }})
 <br>
-![Image 6]({{ page.images[1].path | absolute_url }})
+![Image 6]({{ page.images[6].path | absolute_url }})
 <br>
-![Image 7]({{ page.images[1].path | absolute_url }})
+![Image 7]({{ page.images[7].path | absolute_url }})
 
