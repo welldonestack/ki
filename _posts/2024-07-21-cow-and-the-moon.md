@@ -32,21 +32,27 @@ table_data:
 <br>
 ![Image 1]({{ page.images[1].path | absolute_url }})
 ↳ Returning to the Italian heritage, a coaster was created using an abstract cow shape variation, incorporating traditional Italian pattern elements.
+
 <br>
 ![Image 2]({{ page.images[2].path | absolute_url }})
 ↳ A flexible visual identity adapts to different ratios while maintaining a consistent overall feeling.
+
 <br>
 ![Image 3]({{ page.images[3].path | absolute_url }})
 ↳ For the menu, various logo variations were explored, with the oval logo emerging as the most effective for conveying an authentic gelateria look. Additionally, different secondary graphics were used to complement the design.
+
 <br>
 ![Image 4]({{ page.images[4].path | absolute_url }})
 ↳ How it looks in the current venue.
+
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
 ↳ Posters were created using the same visual language, featuring the campaign "G’ stands for Good," which connects with Australian culture. The campaign highlights the slogans: "G’day," "G’People," and "Great Gelato."
+
 <br>
 ![Image 6]({{ page.images[6].path | absolute_url }})
 ↳ Merchandise was also created with the venue's heritage in mind. There are two versions: one featuring the tagline and venue address, and another inspired by a vintage receipt, listing their gelato flavors.
+
 <br>
 ![Image 7]({{ page.images[7].path | absolute_url }})
 
