@@ -8,7 +8,6 @@ caption:
 caption_images: 
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-02.png"
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-03.png"
-  - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-04.png"
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-05.png"
 images:
   - path: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-06.png"
@@ -28,3 +27,19 @@ table_data:
 
 ![Image 0]({{ page.images[0].path | absolute_url }})
 #### Through extensive research, the visual identity was modernized to capture these elements, integrating the brand's story of "Cow jumping over the moon" into the design. This approach resulted in a flexible visual identity that merges modern aesthetics with Italian heritage, creating a cohesive and distinctive look that effectively showcases the unique qualities of their gelato.
+
+<br>
+![Image 1]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 2]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 3]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 4]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 5]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 6]({{ page.images[1].path | absolute_url }})
+<br>
+![Image 7]({{ page.images[1].path | absolute_url }})
+
