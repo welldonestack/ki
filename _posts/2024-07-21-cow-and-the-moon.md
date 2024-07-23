@@ -27,7 +27,7 @@ table_data:
 ---
 
 ![Image 0]({{ page.images[0].path | absolute_url }})
-#### The research was a journey to discover the look and feel of an authentic Italian gelateria, emphasizing craftsmanship. Through extensive research, the visual identity was modernized to capture these elements, integrating the brand's story of "Cow jumping over the moon" into the design. This approach resulted in a flexible visual identity that merges modern aesthetics with Italian heritage, creating a cohesive and distinctive look that effectively showcases the unique qualities of their gelato.
+#### The research journey aimed to uncover the authentic look and feel of an Italian gelateria, with a strong emphasis on craftsmanship. This approach resulted in a flexible visual identity that blends modern aesthetics with Italian heritage, creating a cohesive and distinctive look. The design effectively highlights the unique qualities of their gelato by incorporating the brand's story of "Cow jumping over the moon.
 
 <br>
 ![Image 1]({{ page.images[1].path | absolute_url }})
