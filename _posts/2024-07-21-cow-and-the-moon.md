@@ -1,5 +1,5 @@
 ---
-title:  "BRAND REFRESH FOR COW & THE MOON"
+title:  "BRAND REFRESH FOR GELATERIA COW & THE MOON"
 metadate: "hide"
 categories: Identity
 image: "/assets/images/posts/cow-and-the-moon/cow-and-the-moon-1.png"
