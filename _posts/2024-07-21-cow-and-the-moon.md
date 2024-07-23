@@ -34,12 +34,12 @@ table_data:
 ↳ A flexible visual identity adapts to different aspect ratios while maintaining a consistentcy.
 
 <br>
-![Image 2]({{ page.images[2].path | absolute_url }})
-↳ To emphasize authenticity, a coaster was created using an abstract cow shape variation, incorporating traditional Italian pattern elements.
-
-<br>
 ![Image 3]({{ page.images[3].path | absolute_url }})
 ↳ Pistachio color is used appropriately throughout the graphics as an accent.
+
+<br>
+![Image 2]({{ page.images[2].path | absolute_url }})
+↳ To emphasize authenticity, a coaster was created using an abstract cow shape variation, incorporating traditional Italian pattern elements.
 
 <br>
 ![Image 4]({{ page.images[4].path | absolute_url }})
