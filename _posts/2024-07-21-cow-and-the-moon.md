@@ -43,7 +43,7 @@ table_data:
 
 <br>
 ![Image 4]({{ page.images[4].path | absolute_url }})
-↳ Posters were created using the same visual language, featuring the campaign "G’ stands for Good," which connects with Australian culture. The campaign highlights the slogans: "G’day," "G’People," and "Great Gelato."
+↳ Posters were created using the same visual language and the campaign "G’ stands for Good," which connects with Australian culture. The campaign emphasizes the slogans: “G’day,” “G’People,” and “Great Gelato.”
 
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
