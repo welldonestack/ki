@@ -47,7 +47,7 @@ table_data:
 
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
-↳ Merchandise was also created with the venue's heritage in mind. There are two versions: one featuring the tagline and venue address, and another inspired by a vintage receipt, listing their gelato flavors.
+↳ Merchandise was also created with the venue's heritage in mind, Featuring the tagline and venue address
 
 <br>
 ![Image 6]({{ page.images[6].path | absolute_url }})
