@@ -47,7 +47,7 @@ table_data:
 
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
-↳ Merchandise was also created with the venue's heritage in mind, Featuring the tagline and venue address
+↳ Merchandise was also created with the venue's heritage in mind, featuring the tagline.
 
 <br>
 ![Image 6]({{ page.images[6].path | absolute_url }})
