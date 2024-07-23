@@ -39,11 +39,11 @@ table_data:
 
 <br>
 ![Image 2]({{ page.images[2].path | absolute_url }})
-↳ To emphasize authenticity, a coaster was created using an abstract cow shape variation, incorporating traditional Italian pattern elements.
+↳ A coaster was created using an abstract cow shape variation, incorporating traditional Italian pattern elements.
 
 <br>
 ![Image 4]({{ page.images[4].path | absolute_url }})
-↳ Posters were created using the same visual language and the campaign "G’ stands for Good," which connects with Australian culture. The campaign emphasizes the slogans: “G’day,” “G’People,” and “Great Gelato.”
+↳ For the campaign, G’ stands for Good, which connects with Australian culture: “G’day,” “G’People,” and “Great Gelato.”
 
 <br>
 ![Image 5]({{ page.images[5].path | absolute_url }})
